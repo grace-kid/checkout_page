@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+body {
+    padding-inline: 2rem;
+}
+
+header {
+    display: flex;
+    padding-block: 1rem;
+    border-bottom: 1px solid #00000018;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header nav a.active {
+    text-decoration: underline;
+}
+
+header .logo {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+header .icons {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: end;
+    font-size: 1.25rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-block: 2rem;
+}
+
+main .image-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+    grid-template-areas: "imageMain imageMain" "imageLeft imageRight";
+}
+
+main .image-collage .image-main {
+    grid-area: imageMain;
+    width: 100%;
+}
+
+main .image-collage .image-left {
+    grid-area: imageLeft;
+    width: 100%;
+}
+
+main .image-collage .image-right {
+    grid-area: imageRight;
+    width: 100%;
+}
+ 
+main .image-collage div {
+    display: flex;
+    align-items: end;
+}
+
+main .image-collage div img {
+    width: 100%;
+}
+.input { background-color: blanchedalmond; color: bisque;border: 1px solid blue;}
+.name { font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: block;
+    
+    
+}
+.priceb { 
+    color:rgba(0, 0, 0, 0.322); 
+    text-decoration: line-through;
+     padding-right: 20px;
+     font-weight: 600;
+    font-weight: 500;
+    }
+.pricea {
+    color: red;
+    font-weight: 600;
+}
+.p {
+    color: rgba(104, 92, 92, 0.918);
+}
+.color { 
+    display: block;
+    color: #000;
+    font-weight: 600;
+    padding-block: 10px;
+}
+.input [type=radio]{
+    appearance: none;
+    border: 2px solid rgb(196, 170, 238);
+    color: rgba(214, 198, 146, 0.979);
+    width: 25px;height: 25px;
+    border-radius: 50px;
+    
+}*/
+.inp:hover {
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    color: aqua;
+    border-radius: 50px;
+    border: 2px solid blue;
+}
+.size { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#size {
+    display: inline;
+}
+.sizes button {
+    background-color: transparent;
+border: 1px solid black;
+padding-inline: 7px;
+border-radius: 5px;
+font-weight: 600;
+}
+.sizes .active {
+    background-color: black;
+border: transparent;
+padding-inline: 7px;
+border-radius: 10px;
+font-weight: 600;
+color: aliceblue;
+}
+
+ .sizes {
+ margin-block: 20px;
+}
+a { 
+    color: #000;
+    font-weight: 600;
+}
+ .cart {
+    background-color: #000;
+    color: aliceblue;
+    padding-inline: 50px;
+    padding-block: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.cartd {
+    margin-bottom: 20px;
+}
+ .cartd #iconn {
+    padding-inline: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-block: 5px;
+ }
+.stong {
+    font-weight: 600;
+}
+.sp { 
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+select { 
+    border: none;
+}
+#sp {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+    padding-bottom: 10px;
+}
+input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(180, 136, 136);
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  input[type="radio"]:checked + label::before {
+    background-color: #97a6a8f6; /* Example color */
+  }
+  input[type="radio"] + label:hover::before {
+    border-color: rgb(160, 85, 85);
+  }
+  input[type="radio"]:disabled + label::before {
+    background-color: #eee;
+    border-color: #ccc;
+  }
